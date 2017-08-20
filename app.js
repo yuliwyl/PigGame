@@ -13,7 +13,9 @@ GAME RULES:
 
 var sores, roundScore, activePlayer, gamePlaying;
 
+
 initial();
+
 
 // click dice roll 
 document.querySelector('.btn-roll').addEventListener('click', function (){
@@ -85,6 +87,7 @@ function nextPlayer (){
 document.querySelector('.btn-new').addEventListener('click', initial);
 
 
+
 function initial (){
     scores =[0,0];
     roundScore = 0;
@@ -103,14 +106,10 @@ function initial (){
     document.querySelector('.player-1-panel').classList.remove('winner');
     document.querySelector('.player-0-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('active');
-    document.querySelector('.player-1-panel').classList.remove('active');   
+    document.querySelector('.player-1-panel').classList.remove('active');  
+    
+    gamePlaying = true;
 }
-
-
-
-
-
-
 
 
 
